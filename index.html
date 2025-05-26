@@ -7,12 +7,20 @@
     <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GODWIN MONDAY</title>
+    <title>AI ILABS</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <!-- google Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- google animation  -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+                <!-- google bullet icon -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -30,553 +38,1760 @@
         <div class="loader"></div>
     </div>
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html">GODWIN MONDAY<img src="#img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="./about.html">About</a></li>
-                                        <li><a href="./portfolio.html">Portfolio</a></li>
-                                        <li><a href="./index.html">Blog</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="https://www.facebook.com/profile.php?id=100078716082893"><i class="fa fa-facebook"></i></a>
-                            <a href="https://x.com/Darrellybud?s=09"><i class="fa fa-twitter"></i></a>
-                            <a href="https://wame/+2348082696226?text=Hello"><i class="fa fa-dribbble"></i></a>
-                            <a href="https://www.linkedin.com/in/godwin-monday-b919672b2"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
-    </header>
+<!-- Header Section Begin -->
+<header class="header" style="background-color: rgb(5, 63, 26); width: 100%;">
+  <div class="container py-2">
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <div class="header__logo d-flex align-items-center">
+        <a href="./index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img src="img/hero/1.jpg" alt="AI ILABS Logo" style="height: 40px; margin-right: 8px; border-radius: 15px;">
+          <span style="font-weight: bold; font-size: 18px;">AI ILABS</span>
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="d-none d-lg-block">
+        <ul class="d-flex gap-4 list-unstyled mb-0">
+          <li><a href="#prompt-bank" style="padding: 20px;" class="text-white text-decoration-none">Prompt Bank</a></li>
+          <li><a href="#contact" style="padding: 20px;" class="text-white text-decoration-none">Contact Us</a></li>
+          <li><a href="#webinar" style="padding: 20px;" class="text-white text-decoration-none">Join Webinar</a></li>
+          <li><a href="#demo" style="padding: 20px;" class="text-white text-decoration-none">Demo</a></li>
+        </ul>
+      </nav>
+
+      <!-- Social Icons (Desktop Only) -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a href="https://www.facebook.com/share/g/15VmRkanax/?mibextid=wwXIfr" style="padding: 5px;" class="text-white"><i class="fa fa-facebook"></i></a>
+        <a href="https://x.com/ilabsglobal" style="padding: 5px;" class="text-white"><i class="fa fa-twitter"></i></a>
+        <a href="https://beta.ilabs.world/" style="padding: 5px;" class="text-white"><i class="fa fa-dribbble"></i></a>
+        <a href="https://www.instagram.com/p/DDY7fGyNA2y/?utm_source=ig_web_copy_link&igsh=MzRIODBiNWFIZA==" style="padding: 5px;" class="text-white"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtu.be/FTm_FP85sWY?si=fbM1JUVFaBglgJWG" style="padding: 5px;" class="text-white"><i class="fa fa-youtube-play"></i></a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button id="mobile-menu-toggle" class="d-lg-none btn btn-sm btn-light">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu-wrap" class="d-lg-none bg-dark text-white py-3 px-3" style="display: none; position: absolute; top: 100%; right: 0; width: 100%; z-index: 999;">
+    <ul class="list-unstyled">
+      <li><a href="#prompt-bank" class="text-white d-block py-1">Prompt Bank</a></li>
+      <li><a href="#contact" class="text-white d-block py-1">Contact Us</a></li>
+      <li><a href="#webinar" class="text-white d-block py-1">Join Webinar</a></li>
+      <li><a href="#demo" class="text-white d-block py-1">Demo</a></li>
+    </ul>
+    <div class="mt-2">
+      <a href="https://www.facebook.com/share/g/15VmRkanax/?mibextid=wwXIfr" class="text-white me-2"><i class="fa fa-facebook"></i></a>
+      <a href="https://x.com/ilabsglobal" class="text-white me-2"><i class="fa fa-twitter"></i></a>
+      <a href="https://beta.ilabs.world/" class="text-white me-2"><i class="fa fa-dribbble"></i></a>
+      <a href="https://www.instagram.com/p/DDY7fGyNA2y/?utm_source=ig_web_copy_link&igsh=MzRIODBiNWFIZA==" class="text-white me-2"><i class="fa fa-instagram"></i></a>
+      <a href="https://youtu.be/FTm_FP85sWY?si=fbM1JUVFaBglgJWG" class="text-white"><i class="fa fa-youtube-play"></i></a>
+    </div>
+  </div>
+</header>
+<!-- Header Section End -->
+
+<!-- Smooth Scroll -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu-wrap');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Optional: Close mobile menu on outside click
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+      mobileMenu.style.display = 'none';
+    }
+  });
+
+  // Optional: Close menu on link click
+  document.querySelectorAll('#mobile-menu-wrap a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.style.display = 'none';
+    });
+  });
+</script>
+
+
+
     <!-- Header End -->
 
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero/darrelly.jpg">
+            <div class="hero__item set-bg" data-setbg="img/hero/12.jpg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="hero__text">
-                                <span> Website development and cyber security</span>
-                                <h2>godwin monday</h2>
-                                <a href="#" class="primary-btn">See more about me</a>
+                                <h2>AI Lab: Innovations Driven by iLabs</h2>
+                                <span> AI Lab is your ultimate hub for productivity-boosting AI tools. Discover the right tools for your needs, 
+                                    find tailored prompts for various content modalities, and explore video demos that make leveraging AI simple 
+                                    and effective. <br>
+                                    Proudly brought to you by iLabs, where innovation meets simplicity.
+                                </span>
+                                
+                                <!-- <a href="#" class="primary-btn">See more about me</a> -->
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- First Row: 3 Buttons -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-auto my-2">
+                        <a href="#idea" class="btn btn-info" style="background-color: rgb(5, 63, 26);">Ideation and Business Development</a>
+                        </div>
+                        <div class="col-auto my-2">
+                        <a href="#image" class="btn btn-info" style="background-color: rgb(5, 63, 26);">Image and Video Creation</a>
+                        </div>
+                        <div class="col-auto my-2">
+                        <a href="#prog" class="btn btn-info" style="background-color: rgb(5, 63, 26);">Programing and Software Development</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Second Row: 3 Buttons -->
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-auto my-2">
+                        <a href="#dataana" class="btn btn-info" style="background-color: rgb(5, 63, 26);">Data Analysis</a>
+                        </div>
+                        <div class="col-auto my-2">
+                        <a href="#research" class="btn btn-info" style="background-color: rgb(5, 63, 26);">Research and Education</a>
+                        </div>
+                        <div class="col-auto my-2">
+                        <a href="#task" class="btn btn-info" style="background-color: rgb(5, 63, 26);">Tasks Automations</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/darrelly.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>Website development and cyber security</span>
-                                <h2>godwin monday (fullstack web developer's Portfolio)</h2>
-                                <a href="#" class="primary-btn">See more about me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/darrelly.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>Website development and cyber security</span>
-                                <h2>godwin monday (cyber security engineer's Portfolio)</h2>
-                                <a href="#" class="primary-btn">See more about me</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </section>
     <!-- Hero Section End -->
 
-    <!-- Services Section Begin -->
-    <section class="services spad">
+    <section id="idea" class="py-5" style="background-color: rgb(5, 63, 26);"> <!-- Light purple background -->
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="services__title">
-                        <div class="section-title">
-                            <span>my services</span>
-                            <h2>What I do?</h2>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-center"><strong>AI Tools for Ideation & Business Development</strong></h3>
+                <p class="text-center">This is the content inside a white container, wrapped in a light purple background.</p>
+    
+                <!-- Light Purple Section Begin -->
+                <div class="container bg-white rounded p-4">
+                    <!-- Side-by-side Text -->
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h4><strong>Generate Creative Business Ideas</strong></h4>
+                            <p>Explore novel business concepts, identify market trends, and develop innovative strategies with our AI-powered ideation tools.</p>
                         </div>
-                        <p> If Hire, you get your website of any form customized with a good user friendly interface that suit your test. (your satisfaction is my priority) 
-                            <br>
-                        -Expertise in full-stack  web development <br>
-                        -Strong problem-solving skills<br>
-                        -excellent communication and collaboration skills<br>
-                        -Passion for delivering high quality solutions<br>
-                        -commitment to meeting deadlines and exceeding expectations</p>
-                        <a href="#" class="primary-btn">View all services</a>
+                        <div class="col-md-6">
+                            <h4><strong>Conduct Market Research</strong></h4>
+                            <p>Gain valuable insights into your target audience, analyze competitor landscapes, and make data-driven decisions for business growth.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="">
-                                </div>
-                                <h4>Custom web development</h4>
-                                <p>I design and develop bespoke web application tailored to meet the unique needs of your business.</p>
+    
+                    <!-- Small Container for Buttons -->
+                    <div class="mx-auto" style="max-width: 720px;">
+                        <!-- First Row: 3 Buttons -->
+                        <div class="row mt-3 gx-2"> <!-- gx-2 reduces horizontal space between columns -->
+                            <div class="col-md-4 mb-2 d-flex justify-content-center">
+                                <a href="https://chat.openai.com/" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">ChatGPT</a>
+                            </div>
+                            <div class="col-md-4 mb-2 d-flex justify-content-center">
+                                <a href="https://www.perplexity.ai" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Perplexity AI</a>
+                            </div>
+                            <div class="col-md-4 mb-2 d-flex justify-content-center">
+                                <a href="https://chat.deepseek.com/"  class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">DeepSeek</a>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-2.png" alt="">
-                                </div>
-                                <h4>Front End Development </h4>
-                                <p>I carft responsive, intuitive and engaging user interface usinsg HTML, CSS, and JavaScript.</p>
+    
+                        <!-- Second Row: 2 Buttons -->
+                        <div class="row mt-2 gx-2">
+                            <div class="col-md-6 mb-2 d-flex justify-content-center">
+                                <a href="https://www.growthbarseo.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Growth Bar</a>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="">
-                                </div>
-                                <h4>Back-end Development</h4>
-                                <p>I develop robust and scalable server-side applications using Node.js, Python, Ruby on Rails, and other technologies.<br>
-                                I integrate third-party APIs to enhance the functionality of your web application</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="services__item">
-                                <div class="services__item__icon">
-                                    <img src="img/icons/si-4.png" alt="">
-                                </div>
-                                <h4>Database management</h4>
-                                <p>I design and manage databases to ensure efficient data storage and retrieval.</p>
+                            <div class="col-md-6 mb-2 d-flex justify-content-center">
+                                <a href="https://gemini.google.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Gemini</a>
                             </div>
                         </div>
                     </div>
+                    <!-- End Small Container -->
                 </div>
+                <!-- Light Purple Section ends -->
             </div>
         </div>
     </section>
-    <!-- Services Section End -->
-
-    <!-- Work Section Begin -->
-    <section class="work">
-        <div class="work__gallery">
-            <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/i2.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="#fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>linkedin> GODWIN MONDAY</h4>
-                    <ul>
-                        <li>web development</li>
-                        <li>cyber security</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/i1.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/i3.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item large__item set-bg" data-setbg="img/work/i4.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>facebook> Darrelly Lordlik Monday</h4>
-                    <ul>
-                        <li>web development</li>
-                        <li>cyber security</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/i5.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/i6.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-            </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/i7.png">
-                <a href="#" class="play-btn video-popup"><i
-                        class="fa fa-play"></i></a>
-                <div class="work__item__hover">
-                    <h4>whatsapp> +234 8082696226</h4>
-                    <ul>
-                        <li>web development</li>
-                        <li>cyber security</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Work Section End -->
-
-    <!-- Counter Section Begin -->
-    <section class="counter">
+    
+    
+    <section id="image" class="py-5 bg-white">
         <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">211</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">1068</h2>
-                                <p>Happy clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">211</h2>
-                                <p>Perspective clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">211</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row align-items-center">
+            <!-- Text Left -->
+            <div class="col-md-6">
+              <h3><strong>AI Tools for Image and Video Creation</strong></h3>
+      
+              <!-- Two-Column Text Grid -->
+              <div class="row mb-4">
+                <!-- Left Column with Brush Icon -->
+                <div class="col-sm-6">
+                  <div class="mb-2">
+                    <i class="fas fa-paint-brush fa-2x text-primary"></i>
+                  </div>
+                  <h4><strong>Create Stunning Visuals</strong></h4>
+                  <p>Transform your ideas into captivating images and videos with our AI-powered image and video generation tools.</p>
                 </div>
+      
+                <!-- Right Column with Camera Icon -->
+                <div class="col-sm-6">
+                  <div class="mb-2">
+                    <i class="fas fa-video fa-2x text-primary"></i>
+                  </div>
+                  <h4><strong>Enhance Your Visuals</strong></h4>
+                  <p>Edit, modify, and improve existing images and videos, boosting their quality and visual impact.</p>
+                </div>
+              </div>
+      
+              <!-- Button Container -->
+              <div class="mx-auto" style="max-width: 720px;">
+                <!-- First Row: 3 Buttons -->
+                <div class="row gx-2 mb-2">
+                  <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+                    <a href="https://openai.com/dall-e-3" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">DALL-E</a>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+                    <a href="https://www.midjourney.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Midjouney</a>
+                  </div>
+                  <div class="col-md-4 d-flex justify-content-center">
+                    <a href="https://invideo.io" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Invideo AI</a>
+                  </div>
+                </div>
+      
+                <!-- Second Row: 2 Buttons -->
+                <div class="row gx-2">
+                  <div class="col-md-6 d-flex justify-content-center mb-2 mb-md-0">
+                    <a href="https://runwayml.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Runaway</a>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center">
+                    <a href="https://victoryai.io" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Pictory AI</a>
+                  </div>
+                </div>
+              </div>
             </div>
+      
+            <!-- Image Right -->
+            <div class="col-md-6 mt-4 mt-md-0">
+              <img src="img/hero/OIP.jpeg" alt="Descriptive Alt Text" class="img-fluid rounded shadow">
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- Counter Section End -->
+      </section>
+      
+      
+      
+    
 
-    <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nice to meet</span>
-                        <h2>This is ME (DARRELLY'S CODE)</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/darrelly1.jpg">
-                        <div class="team__item__text">
-                            <h4>GODWIN MONDAY</h4>
-                            <p>LEAD WEB DEV ILAB</p>
-                            <div class="team__item__social">
-                                <a href="https://www.facebook.com/profile.php?id=100078716082893"><i class="fa fa-facebook"></i></a>
-                                <a href="https://x.com/Darrellybud?s=09"><i class="fa fa-twitter"></i></a>
-                                <a href="https://wame/+2348082696226?text=Hello"><i class="fa fa-dribbble"></i></a>
-                                <a href="https://www.linkedin.com/in/godwin-monday-b919672b2"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/d1.jpg">
-                        <div class="team__item__text">
-                            <h4>DARRELLY'S CODE</h4>
-                            <p>WEB DEV AKWA IBOM STATE UNIVERSITY COMMUNITY</p>
-                            <div class="team__item__social">
-                                <a href="https://www.facebook.com/profile.php?id=100078716082893"><i class="fa fa-facebook"></i></a>
-                            <a href="https://x.com/Darrellybud?s=09"><i class="fa fa-twitter"></i></a>
-                            <a href="https://wame/+2348082696226?text=Hello"><i class="fa fa-dribbble"></i></a>
-                            <a href="https://www.linkedin.com/in/godwin-monday-b919672b2"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/godwin.jpg">
-                        <div class="team__item__text">
-                            <h4>GODWIN MONDAY</h4>
-                            <p>LEAD WEB DEV ILAB</p>
-                            <div class="team__item__social">
-                                <a href="https://www.facebook.com/profile.php?id=100078716082893"><i class="fa fa-facebook"></i></a>
-                                <a href="https://x.com/Darrellybud?s=09"><i class="fa fa-twitter"></i></a>
-                                <a href="https://wame/+2348082696226?text=Hello"><i class="fa fa-dribbble"></i></a>
-                                <a href="https://www.linkedin.com/in/godwin-monday-b919672b2"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/team/darrelly.jpg">
-                        <div class="team__item__text">
-                            <h4>DARRELLY'S CODE</h4>
-                            <p>WEB DEV AKWA IBOM STATE UNIVERSITY COMMUNITY</p>
-                            <div class="team__item__social">
-                                <a href="https://www.facebook.com/profile.php?id=100078716082893"><i class="fa fa-facebook"></i></a>
-                            <a href="https://x.com/Darrellybud?s=09"><i class="fa fa-twitter"></i></a>
-                            <a href="https://wame/+2348082696226?text=Hello"><i class="fa fa-dribbble"></i></a>
-                            <a href="https://www.linkedin.com/in/godwin-monday-b919672b2"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 p-0">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Meet me</a>
-                    </div>
-                </div>
-            </div>
+<!-- Background Image Section -->
+<section id="prog" class="py-5 text-dark" style="background-image: url('img/hero/9.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-color: rgba(255, 255, 255, 0.9); background-blend-mode: lighten;">
+    <div class="container">
+      
+      <!-- Bold Heading -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold"><strong>Tools for Software Development</strong> </h2>
+      </div>
+  
+      <!-- Milky Colored Boxes -->
+      <div class="row mb-4">
+        <div class="col-md-4 mb-3">
+          <div class="p-4 rounded shadow" style="background-color: #fdfdf2;">
+            <h4 class="fw-semibold"><strong>Code Generation</strong></h4>
+            <p>Generate code for different programming languages, reducing development time and improving efficiency.</p>
+          </div>
         </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>My Blog</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>HAVE YOU HEARD OF ILAB?</h4>
-                            <ul>
-                                <li>MAY 04, 2025</li>
-                                <li>86 Comment</li>
-                            </ul>
-                            <p>ILAB is one of the fastest growing company, that has good and quality developers, social media influencers, project manager, 
-                                cyber security engineers, AI engineers etc. All in one team, and am a product of it.
-                            </p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Fast way to learn Web development</h4>
-                            <ul>
-                                <li>Jan 03, 2025</li>
-                                <li>1k Comment</li>
-                            </ul>
-                            <p>Before you go for any tech skill make sure thats your like and wont give up even when it goes hard. and if you choose web development
-                                you have meet the right person. Godwin Monday...
-                            </p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Dec 09, 2024</li>
-                                <li>40 Comment</li>
-                            </ul>
-                            <p>I recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>feb 03, 2025</li>
-                                <li>71 Comment</li>
-                            </ul>
-                            <p>I recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>HAVE YOU HEARD OF ILAB?</h4>
-                            <ul>
-                                <li>MAY 04, 2025</li>
-                                <li>86 Comment</li>
-                            </ul>
-                            <p>ILAB is one of the fastest growing company, that has good and quality developers, social media influencers, project manager, 
-                                cyber security engineers, AI engineers etc. All in one team, and am a product of it.
-                            </p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Fast way to learn Web development</h4>
-                            <ul>
-                                <li>Jan 03, 2025</li>
-                                <li>1k Comment</li>
-                            </ul>
-                            <p>Before you go for any tech skill make sure thats your like and wont give up even when it goes hard. and if you choose web development
-                                you have meet the right person. Godwin Monday...
-                            </p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Dec 09, 2024</li>
-                                <li>40 Comment</li>
-                            </ul>
-                            <p>I recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>feb 03, 2025</li>
-                                <li>71 Comment</li>
-                            </ul>
-                            <p>I recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-4 rounded shadow" style="background-color: #fdfdf2;">
+            <h4 class="fw-semibold"><strong>Code Optimization</strong></h4>
+            <p>Analyze your code and suggest improvements, enhancing performance and readability.</p>
+          </div>
         </div>
-    </section>
-    <!-- Latest Blog Section End -->
-
+        <div class="col-md-4 mb-3">
+          <div class="p-4 rounded shadow" style="background-color: #fdfdf2;">
+            <h4 class="fw-semibold"><strong>Bug Detection</strong></h4>
+            <p>Identify and fix bugs in your code, ensuring seamless software functionality.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Button Container -->
+      <div class="mx-auto" style="max-width: 650px;">
+        <!-- 3 Buttons Row -->
+        <div class="row gx-2 mb-2">
+          <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+            <a href="https://github.com/features/copilot" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">GitHub Copilot</a>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+            <a href="https://www.useblackbox.io" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Black Box AI</a>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <a href="https://v0.dev" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Vo</a>
+          </div>
+        </div>
+  
+        <!-- 2 Buttons Row -->
+        <div class="row gx-2">
+          <div class="col-md-6 d-flex justify-content-center mb-2 mb-md-0">
+            <a href="https://sourceai.dev" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Source AI</a>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <a href="https://www.tabnine.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Tabnibe</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
   
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            
-                            <a href="#">GOWIN MONDAY<img src="#" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="https://www.facebook.com/profile.php?id=100078716082893"><i class="fa fa-facebook"></i></a>
-                            <a href="https://x.com/Darrellybud?s=09"><i class="fa fa-twitter"></i></a>
-                            <a href="https://wame/+2348082696226?text=Hello"><i class="fa fa-dribbble"></i></a>
-                            <a href="https://www.linkedin.com/in/godwin-monday-b919672b2"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About me</h5>
-                            <p>Am a passionate web developer who dont just build for money but for purpose</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Who am I?</h5>
-                            <ul>
-                                <li><a href="#">Myself</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>My work</h5>
-                            <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">COllabo</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">web Dev</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Code ninja at work<br>
-                                Darrellymonday@gmail.com
-                            </p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text"> &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            GODWIN MONDAY MADE THIS.. <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> iLAB
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
+  
+  <section id="dataana" class="py-5 bg-white">
+    <div class="container">
+      <!-- Faint Background Image Container -->
+      <div class="p-5 rounded shadow" style="background-image: url('img/hero/OIP\ \(1\).jpeg'); background-size: cover; background-position: center; background-blend-mode: lighten; background-color: rgba(255, 255, 255, 0.8);">
+        
+        <!-- Subheading -->
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold display-6"><strong>AI Tools for Data Analysis</strong></h2>
         </div>
-    </footer>
-    <!-- Footer Section End -->
+  
+        <!-- Grid with 10X and 95% -->
+        <div class="row text-center text-md-start mb-4">
+          <!-- Left: 10X -->
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+            <h1 class="display-1 fw-bold text-primary">10X</h1>
+            <h4 class="fw-semibold"><strong>Speed Up Insights</strong></h4>
+            <p>Analyze large datasets, identify trends, and uncover hidden patterns with AI-powered data analysis tools.</p>
+          </div>
+  
+          <!-- Right: 95% -->
+          <div class="col-md-6" data-aos="fade-left">
+            <h1 class="display-1 fw-bold text-success">95%</h1>
+            <h4 class="fw-semibold"><strong>Boost Accuracy</strong></h4>
+            <p>Improve the accuracy and reliability of your data analysis, gaining a deeper understanding of your data.</p>
+          </div>
+        </div>
+  
+        <!-- Button Container -->
+        <div class="mx-auto" style="max-width: 650px;" data-aos="zoom-in">
+          <!-- 3 Buttons Row -->
+          <div class="row gx-2 mb-2">
+            <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+              <a href="https://julius.ai" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Julius AI</a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+              <a href="https://powerdrill.ai" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Power Drill AI</a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <a href="#feature3" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Data Analyst</a>
+            </div>
+          </div>
+  
+          <!-- 2 Buttons Row -->
+          <div class="row gx-2">
+            <div class="col-md-6 d-flex justify-content-center mb-2 mb-md-0">
+              <a href="https://www.tableau.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Tableau AI</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <a href="https://www.polymersearch.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Polymer AI</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="research" class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Side: Image -->
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+          <img src="img/hero/BB (7).jpg" alt="AI Illustration" class="img-fluid rounded w-100 shadow">
+        </div>
+  
+        <!-- Right Side: Text Content -->
+        <div class="col-md-6" data-aos="fade-left">
+          <!-- Subheading -->
+          <h2 class="fw-bold mb-4"><strong>AI Tools for Research & Education</strong></h2>
+  
+          <!-- List Items -->
+          <!-- List Items -->
+            <ol class="ps-3">
+                <li class="mb-4">
+                <div class="mb-2">
+                    <i class="bi bi-arrow-down-circle-fill fs-3 text-primary"></i>
+                </div>
+                <h4 class="fw-semibold"><strong>Personalized Learning</strong></h4>
+                <p>Tailor your learning experience with AI-powered platforms that adapt to your needs and learning style.</p>
+                </li>
+                <li>
+                <div class="mb-2">
+                    <i class="bi bi-arrow-down-circle-fill fs-3 text-primary"></i>
+                </div>
+                <h4 class="fw-semibold"><strong>Research Assistance</strong></h4>
+                <p>Get help with research tasks, from literature reviews to data analysis, to accelerate your research process.</p>
+                </li>
+            </ol>
+  
+          <!-- Button Container -->
+          <div class="mx-auto" style="max-width: 600px;" data-aos="fade-up">
+            <!-- 3 Buttons Row -->
+            <div class="row gx-2 mb-2">
+              <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+                <a href="https://storm.dev" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">STORM</a>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center mb-2 mb-md-0">
+                <a href="https://www.grammarly.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Grammerly </a>
+              </div>
+              <div class="col-md-4 d-flex justify-content-center">
+                <a href="https://www.khanacademy.org/khan-labs" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Khanmigo</a>
+              </div>
+            </div>
+  
+            <!-- 2 Buttons Row -->
+            <div class="row gx-2">
+              <div class="col-md-6 d-flex justify-content-center mb-2 mb-md-0">
+                <a href="https://quillbot.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">QuillBot</a>
+              </div>
+              <div class="col-md-6 d-flex justify-content-center">
+                <a href="https://quizlet.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Quizlet</a>
+              </div>
+            </div>
+          </div>
+  
+        </div> <!-- End of Right Side -->
+  
+      </div>
+    </div>
+  </section>
+  
+
+   
+  <section id="task" class="py-5" style="background-color: rgb(5, 63, 26);">
+    <div class="container bg-white rounded shadow p-5">
+      <!-- Subheading -->
+      <h2 class="text-center fw-bold mb-5"><strong>AI Tools for Tasks Automation & Assistants</strong></h2>
+  
+      <!-- Timeline Style with Grid Layout -->
+            <div class="container my-5 py-4" style="border-top: 3px solid #ccc;">
+              <div class="row text-center text-md-start">
+                
+                <!-- Label 1 -->
+                <div class="col-md-6 mb-4">
+                  <div class="border-start border-3 border-dark ps-3">
+                    <h4 class="fw-bold mt-2"><strong>Automate Repetitive Tasks</strong></h4>
+                    <p class="small">
+                     <h4>Free up your time by automating routine tasks, such as scheduling, email management, and data entry.</h4> 
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Label 2 -->
+                <div class="col-md-6 mb-4">
+                  <div class="border-start border-3 border-dark ps-3">
+                    <h4 class="fw-bold mt-2"><strong>Smart Assistants</strong></h4>
+                    <p class="small">
+                      <h4>Work smarter, not harder, with AI-powered assistants that can answer your questions, provide insights, and complete tasks on your behalf.</h4> 
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+      <!-- Button Container -->
+      <div class="mx-auto text-center" style="max-width: 600px;">
+        <!-- 3 Buttons -->
+        <div class="row gx-2 mb-3">
+          <div class="col-md-4 mb-2">
+            <a href="https://www.notion.so" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Notion</a>
+          </div>
+          <div class="col-md-4 mb-2">
+            <a href="https://zapier.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Zaphier</a>
+          </div>
+          <div class="col-md-4 mb-2">
+            <a href="https://gamma.app" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Gamma AI</a>
+          </div>
+        </div>
+  
+        <!-- 2 Buttons -->
+        <div class="row gx-2">
+          <div class="col-md-6 mb-2">
+            <a href="https://slidebean.com" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Slidebean</a>
+          </div>
+          <div class="col-md-6 mb-2">
+            <a href="https://fireflies.ai" class="btn btn-info text-white w-100" style="background-color: rgb(5, 63, 26);">Fireflies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <section class="py-5" id="prompt-bank" style="background-color: #fff;">
+    <div class="container">
+      <!-- Subheading -->
+      <h2 class="text-center fw-bold mb-4" style="color:whiite;"><strong>Prompts Bank: A Collection of AI Prompts</strong></h2>
+      <p class="text-center mb-5">Access a curated repository of effective prompts for AI applications covering writing, imaging, video, coding, and research tasks.</p>
+  
+      <!-- Image Grid -->
+      <div class="row">
+        <!-- First Row: 3 Images -->
+        <div class="col-md-4 mb-4">
+          <img src="img/hero/OIP (2).jpeg" alt="Image 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/hero/OIP (3).jpeg" alt="Image 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/hero/R.jpeg" alt="Image 3" class="img-fluid rounded">
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- Second Row: 3 Images -->
+        <div class="col-md-4 mb-4">
+          <img src="img/hero/OIP (1).jpeg" alt="Image 4" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/hero/OIP.jpeg" alt="Image 5" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="img/hero/OIP (4).jpeg" alt="Image 6" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="py-5" style="position: relative; overflow: hidden;">
+    <div class="container">
+        <!-- Bold Heading -->
+        <h2 class="fw-bold text-left text-black mb-4">Prompt Engineering Guide Using the Acronym CREATE</h2>
+        <!-- Follow-up Text -->
+        <p class="text-left text-black">The <strong>CREATE</strong> framework is a structured approach to crafting effective prompts for AI tools like ChatGPT. Each letter in 
+            the acronym represents a step to ensure clarity, specificity, and relevance in your requests. Below is a detailed guide with examples for
+            each step:</p>
+
+            <h2 class="fw-bold text-left text-black mb-4">C - Character: Define Your Role</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black">Clearly state your role or the perspective you want the AI to adopt. This helps the AI tailor its response
+               to your needs.</p>
+            <h2>Examples:</h2>
+          <p>
+            1.  I am a Data Analyst working for an e-commerce company.<br>
+            2.  I am a High School Teacher preparing a lesson plan on World History.<br>
+            3.  I am a Product Manager at a SaaS company specializing in project management tools.
+          </p>
+        
+          <h2 class="fw-bold text-left text-black mb-4">R - Request: State What You Want</h2>
+          <p class="text-left text-black">Specify the task or output you want from the AI. Be clear and concise about your goal.</p>
+         <h2>Examples:</h2>
+       <p>
+         1.  I want you to analyze customer feedback data and identify common pain points.<br>
+         2.  I need a step-by-step guide on how to set up a Google Ads campaign for a small business..<br>
+         3.  Please generate a list of creative blog post ideas for a travel agency targeting millennials.
+       </p>
+
+       <h2 class="fw-bold text-left text-black mb-4">E - Example: Give an Example of Desired Output</h2>
+       <p class="text-left text-black">Provide a sample or example of what you expect the output to look like. This helps the AI understand
+         the format and depth of the response.</p>
+      <h2>Examples:</h2>
+    <p>
+      <b>1.</b>  For example, the output could be a table showing the top 5 pain points, their frequency, and suggested solutions.<br>
+      <b>2.</b>  For instance, the guide should include steps like "Step 1: Set up your Google Ads account," followed by detailed instructions.<br>
+      <b>3.</b>   An example blog post idea could be "10 Hidden Gems in Europe You Must Visit Before They Get Crowded."
+    </p>
+
+          <h2 class="fw-bold text-left text-black mb-4">A - Adjustment: Outline Key Features or Constraints</h2>
+          <p class="text-left text-black">Specify any adjustments, constraints, or key features that should be included in the output.</p>
+        <h2>Examples:</h2>
+      <p>
+        <b>1.</b>  Ensure the analysis focuses on feedback from the last 6 months and excludes international customers.<br>
+        <b>2.</b>  The guide should include tips for budgeting and targeting local customers.<br>
+        <b>3.</b>   The blog post ideas should focus on eco-friendly travel and budget destinations.
+      </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">T - Token Penalty: Set Word Count or Output Length</h2>
+        <p class="text-left text-black">Define the desired length of the output, either in words, sentences, or paragraphs.</p>
+        <h2>Examples:</h2>
+        <p>
+        <b>1.</b>  Limit the analysis to 300 words or a maximum of 5 bullet points.<br>
+        <b>2.</b>  The guide should be no more than 800 words.<br>
+        <b>3.</b>   Provide 10 blog post ideas, each described in 1-2 sentences.
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">E - Extras: Add Other Details or Specifics</h2>
+        <p class="text-left text-black">Include any additional details, such as preferred formats, follow-up questions, or further interactions.</p>
+        <h2>Examples:</h2>
+        <p>
+        <b>1.</b>  Present the analysis as a table and ask me if I need a visual graph for better understanding.<br>
+        <b>2.</b>  Present the analysis as a table and ask me if I need a visual graph for better understanding.<br>
+        <b>3.</b>   Format the blog post ideas as a numbered list and suggest hashtags for social media promotion.
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">Great Examples of CREATE in Action</h2>
+        
+        <h4>Example 1: Marketing Campaign</h4>
+        <p>
+          <ul>
+            <li><strong>C:</strong> I am a Marketing Manager for a fitness brand.</li>
+            <li><strong>R:</strong>   want you to create a social media campaign plan for our new protein shake.</li>
+            <li><strong>E:</strong> For example, the plan could include weekly post ideas, hashtags, and engagement strategies.</li>
+            <li><strong>A:</strong> Focus on targeting fitness enthusiasts aged 18-35 and emphasize the product's natural ingredients.</li>
+            <li><strong>T:</strong>   Limit the plan to 500 words.</li>
+            <li><strong>E:</strong> Ask me if I need help scheduling the posts or analyzing engagement metrics.</li>
+          </ul>
+          
+        </p>
+
+        <h4>Example 2: Academic Research</h4>
+        <p>
+          <ul>
+            <li><strong>C:</strong> I am a University Student writing a research paper on climate change</li>
+            <li><strong>R:</strong>   I need you to summarize the key impacts of climate change on coastal cities.</li>
+            <li><strong>E:</strong> For example, the summary could include rising sea levels, economic losses, and migration patterns</li>
+            <li><strong>A:</strong> Focus on data from the last 10 years and cite at least 3 reputable sources.</li>
+            <li><strong>T:</strong>   Keep the summary under 400 words.</li>
+            <li><strong>E:</strong> Ask me if I need help formatting the references in APA style.</li>
+          </ul>
+          
+        </p>
+
+        <h4>Example 3: Product Development</h4>
+        <p>
+          <ul>
+            <li><strong>C:</strong> I am a Product Designer at a tech startup.</li>
+            <li><strong>R:</strong>   I want you to brainstorm features for a new productivity app.</li>
+            <li><strong>E:</strong> For example, the features could include a task scheduler, collaboration tools, and AI-based reminders.</li>
+            <li><strong>A:</strong> Ensure the features are innovative and cater to remote teams.</li>
+            <li><strong>T:</strong>   List 10 features, each described in 1-2 sentences.</li>
+            <li><strong>E:</strong> Ask me if I need help prioritizing the features based on user needs.</li>
+          </ul>
+          <h4>By following the CREATE framework, you can craft precise and effective prompts that yield high-quality outputs tailored to your specific needs.</h4>
+        </p>
+
+    </div>
+
+    <!-- Background Image with Faint Effect -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('img/hero/OIP\ \(5\).jpeg'); background-size: cover; background-position: center; background-attachment: fixed; opacity: 0.3; z-index: -1;"></div>
+</section>
+
+<!-- NEXT ONE  -->
+<section class="py-5" style="position: relative; overflow: hidden;">
+  <div class="container">
+      <!-- Bold Heading -->
+      <h2 class="fw-bold text-left text-black mb-4"><sttrong>Prompt Engineering Guide for Image Creations</sttrong></h2>
+      <!-- Follow-up Text -->
+      <p class="text-left text-black">Using insights from the attached document, here’s a structured guide to crafting effective prompts for 
+        AI image generation tools like <strong>Midjourney</strong> and <strong>DALL-E</strong>. This guide will help you create prompts that align with your vision and produce
+         high-quality images.</p>
+
+          <h2 class="fw-bold text-left text-black mb-4">1. Start with Basic Prompts</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Break down your prompt into three key elements: <strong>Subject, Description,</strong> and <strong>Style/Aesthetic</strong>.</p>
+          
+          <h2 class="fw-bold text-left text-black mb-4">Subject</h2>
+          <h4>Clearly define the main focus of your image. This could be a person, animal, object, or scene.</h4>
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> A portrait of a woman.</li>
+            <li> A futuristic cityscape.</li>
+            <li> A golden retriever playing in a meadow.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">Description</h2>
+         <h4> Add details about the subject, including actions, location, and mood.</h4>
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> A woman sitting in a park, reading a book, on a sunny day.</li>
+            <li> A futuristic cityscape with flying cars and neon lights at night.</li>
+            <li> A golden retriever playing in a meadow with wildflowers under a blue sky.</li>
+          </ul>
+        </p>
+
+          <h2 class="fw-bold text-left text-black mb-4">Style/Aesthetic</h2>
+          <h4>Specify the artistic style or aesthetic you want for your image.</h4>
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Realistic, impressionistic, anime, photorealistic.</li>
+            <li> Cyberpunk, minimalist, surreal, vintage.</li>
+            <li> Watercolor painting, 3D render, charcoal sketch.</li>
+          </ul>
+        </p>
+
+          <h2 class="fw-bold text-left text-black mb-4">2. Keep It Natural and Descriptive</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Use everyday language and avoid jargon. Write your prompt as if you were describing the image to a friend.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Instead of "a woman with an ethereal aura," try "a woman with a glowing glow around her."</li>
+            <li> Instead of "a futuristic city with advanced technology," try "a bustling city with towering
+               skyscrapers, flying cars, and glowing neon signs."</li>
+            <li> Instead of "a dog in a field," try "a golden retriever running through a field of tall grass under a bright blue sky."</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">3.  Add Specific Details</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Include vivid details about colors, textures, lighting, and other elements to make your prompt more precise.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> A woman with flowing red hair, wearing a blue dress, sitting under a willow tree.</li>
+            <li> A futuristic cityscape with metallic buildings, glowing neon signs in pink and blue, and a dark, moody sky.</li>
+            <li> A golden retriever with a shiny coat, running through a field of yellow wildflowers under soft sunlight.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">4.  Experiment with Tools, Prompt Types, and Length</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Different tools and prompt formats can yield varied results. Experiment to find what works best for your needs.</p>
+          
+          <h4>Tools:</h4>
+        <p>
+          <ul>
+            <li> <strong>Midjourney:</strong> Great for artistic and abstract styles.</li>
+            <li> <strong>DALL-E:</strong> Ideal for realistic and creative compositions.</li>
+            <li> <strong>Stable Diffusion:</strong> Versatile for both realistic and surreal images.</li>
+          </ul>
+        </p>
+
+        <h4>Prompt Types</h4>
+        <p>
+          <ul>
+            <li> <strong>Single-line prompt:</strong> "A serene lake surrounded by mountains at sunset."</li>
+            <li> <strong>Multi-line prompt:</strong> <br>
+              "A serene lake surrounded by mountains.<br>
+              The water reflects the orange and pink hues of the sunset.<br>
+              The scene is peaceful and tranquil."</li>
+            <li> <strong>Keyword list:</strong> "lake, mountains, sunset, reflection, serene, peaceful."</li>
+          </ul>
+        </p>
+
+        <h4>Prompt Length</h4>
+        <p>
+          <ul>
+            <li> <strong>Short prompt</strong> "A cat on a windowsill." (Gives the AI more creative freedom.)</li>
+            <li> <strong>Long prompt:</strong> "A fluffy white cat sitting on a wooden windowsill, basking in the warm sunlight,
+               with a potted plant nearby." (Provides more control over details.)</li>
+            
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">5. Focus on What You Want</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Use specific techniques to guide the AI toward your desired outcome.</p>
+          <h3>Use Specific Keywords</h3>
+          <h4>Focus on the most important details.</h4>
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> "A woman with flowing red hair sitting in a field of wildflowers."</li>
+            <li> "A futuristic cityscape with glowing neon signs and flying cars."</li>
+            <li> A golden retriever playing in a meadow with tall grass and wildflowers."</li>
+          </ul>
+        </p>
+
+        <h3>Double Colon (::) for Weighting (Midjourney)</h3>
+        <h4>Use :: to emphasize certain keywords.</h4>
+        <h4>Examples:</h4>
+      <p>
+        <ul>
+          <li> "A woman with flowing red hair:: sitting in a field of wildflowers."</li>
+          <li> "A futuristic cityscape:: with glowing neon signs:: and flying cars."</li>
+          <li> "A golden retriever:: playing in a meadow with tall grass:: and wildflowers."</li>
+        </ul>
+      </p>
+
+          <h3>Image Prompts or References</h3>
+          <h4>Use reference images to guide the AI toward a specific style or composition.</h4>
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Upload a photo of a landscape and ask for a "watercolor painting version."</li>
+            <li> "Use an AI-generated image as a reference for "a similar style but with a different color palette."</li>
+          
+          </ul>
+        </p>
+
+          <h2 class="fw-bold text-left text-black mb-4">6. Iterate and Refine</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">AI image generation is an iterative process. Experiment with different prompts, adjust details, 
+            and refine your approach based on the results.</p>
+          
+          <h4>Examples of Iteration:</h4>
+        <p>
+          <ol>
+            <li> First attempt: "A futuristic cityscape."</li>
+            <li> Refinement: "A futuristic cityscape with glowing neon signs and flying cars at night."</li>
+            <li> Final version: "A cyberpunk cityscape with towering skyscrapers, glowing neon signs in pink and blue, and flying cars 
+              under a dark, moody sky."</li>
+          </ol>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">7. Bonus Tips</h2>
+        <!-- Follow-up Text -->
+       
+      <p>
+        <ul>
+          <li> <strong>Ask for Variations:</strong> Request multiple versions of the same prompt to explore different interpretations.</li>
+          <li> <strong>Combine Styles:</strong> Mix styles for unique results, e.g., "a photorealistic portrait in the style of Van Gogh."</li>
+          <li> <strong>Use Negative Prompts:</strong> Exclude elements you don’t want, e.g., "a serene lake without any people."</li>
+        </ul>
+        <h4>By following this guide, you can create effective prompts that produce stunning, high-quality images tailored to your vision. Happy creating! 🎨</h4>
+      </p>
+      
+  </div>
+
+  <!-- Background Image with Faint Effect -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('img/hero/hero-1.jpg'); background-size: cover; background-position: center; background-attachment: fixed; opacity: 0.3; z-index: -1;"></div>
+</section>
+  
+
+
+<!-- NEXT ONE  -->
+<section class="py-5" style="position: relative; overflow: hidden;">
+  <div class="container">
+      <!-- Bold Heading -->
+      <h2 class="fw-bold text-left text-black mb-4">Prompt Engineering Guide for Video Content</h2>
+      <!-- Follow-up Text -->
+      <p class="text-left text-black">Creating compelling video content using AI tools like <strong>Runway, Synthesia,</strong> or <strong>Pictory </strong>requires a structured 
+        approach to prompt engineering. This guide builds on the principles from the <strong>CREATE</strong> framework and the image prompt engineering guide 
+        to help you craft effective prompts for video generation. Whether you’re creating marketing videos, educational content, or
+         creative storytelling, this guide will ensure your prompts are clear, detailed, and aligned with your vision.</p>
+
+          <h2 class="fw-bold text-left text-black mb-4">1. Character: Define Your Role and Context</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Clearly state your role and the context of the video. This helps the AI understand the perspective and purpose of the content.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> I am a Marketing Manager creating a promotional video for a new fitness app.</li>
+            <li> I am a History Teacher developing an educational video about the Roman Empire.</li>
+            <li> I am a Content Creator producing a short film about climate change.</li>
+          </ul>
+        </p>
+
+       
+
+          <h2 class="fw-bold text-left text-black mb-4">2. Request: State What You Want</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify the type of video you want to create. Be clear about the format, purpose, and key elements.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> I want a 60-second promotional video showcasing the features of our fitness app.</li>
+            <li> I need a 5-minute educational video explaining the rise and fall of the Roman Empire.</li>
+            <li> Create a 2-minute short film about the impact of climate change on coastal cities.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">3.  Example: Provide a Sample Output/h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Give an example of the desired output to guide the AI. This could include the tone, style, or structure of the video.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> The promotional video should start with upbeat music, followed by a voiceover explaining the app’s features, and end with a call-to-action.</li>
+            <li> The educational video should include a timeline of key events, visuals of historical landmarks, and a narrator explaining their significance.</li>
+            <li> The short film should begin with a serene coastal scene, transition to visuals of rising sea levels, and end with a powerful 
+              message about sustainability.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">4.  Adjustment: Outline Key Features and Constraints</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify the key features, style, and any constraints for the video. This ensures the output aligns with your vision.</p>
+          
+        
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> The promotional video should highlight the app’s workout tracking, meal planning, and community features.
+               Use a modern, energetic style with vibrant colors.</li>
+            <li> The educational video should focus on the political, military, and cultural aspects of the Roman Empire. 
+              Use a formal tone and include maps, statues, and reenactments.</li>
+            <li> The short film should emphasize the emotional impact of climate change. Use a cinematic style with dramatic lighting and a somber tone.</li>
+          </ul>
+        </p>
+
+
+          <h2 class="fw-bold text-left text-black mb-4">5. Token Penalty: Set Video Length and Format</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Define the desired length and format of the video. This helps the AI structure the content appropriately.</p>
+          
+          <h4>Examples</h4>
+        <p>
+          <ol>
+            <li> The promotional video should be 60 seconds long, in 16:9 aspect ratio, with a resolution of 1080p.</li>
+            <li> The educational video should be 5 minutes long, with a mix of narration, visuals, and text overlays.</li>
+            <li> The short film should be 2 minutes long, in cinematic widescreen format, with a resolution of 4K.</li>
+          </ol>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">6. Extras: Add Specific Details and Interactions</h2>
+        <!-- Follow-up Text -->
+      
+        <p class="text-left text-black"> Include any additional details, such as music, voiceovers, or specific visuals. You can also 
+          request follow-up interactions to refine the output.</p>
+
+          <h4>Examples</h4>
+      <p>
+        <ul>
+          <li> Add background music that is upbeat and motivational. Use a female voiceover with a friendly tone. Ask me if I 
+            need help selecting the music or voiceover style.</li>
+          <li> Include background music that is classical and solemn. Use a male narrator with a deep, authoritative voice.
+             Ask me if I need additional visuals or text overlays.</li>
+          <li> Use a haunting instrumental soundtrack. Include a voiceover with a reflective tone. Ask me if I need help editing the final cut.</li>
+        </ul>
+      
+      </p>
+          
+          <h2 class="fw-bold text-left text-black mb-4">7. Experiment with Tools, Styles, and Formats</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Different AI tools and prompt formats can yield varied results. Experiment to find what works best for your needs.</p>
+          
+          <h4>Tools:</h4>
+        <p>
+          <ul>
+            <li> <strong>Runway:</strong> Ideal for creative and experimental video content.</li>
+            <li> <strong>Invideo:</strong> Great for AI-generated presenter videos with editable and customizable scenes.</li>
+            <li> <strong>Pictory:</strong> Perfect for turning text into engaging video content.</li>
+          </ul>
+        </p>
+
+        <h4>Prompt Types</h4>
+        <p>
+          <ul>
+            <li> <strong>Descriptive Prompt:</strong> "A 60-second promotional video showcasing the features of our fitness app,
+               with upbeat music and a friendly voiceover."</li>
+            <li> <strong>Script-Based Prompt:</strong>"Create a video based on this script: [Insert script here]."/li>
+            <li> <strong>Keyword list:</strong> "fitness app, workout tracking, meal planning, community features, upbeat music, vibrant colors."</li>
+          </ul>
+        </p>
+
+        <h4>Video Styles</h4>
+        <p>
+          <ul>
+            <li> <strong>Video Styles:</strong> "Use vibrant colors, fast transitions, and upbeat music."</li>
+            <li> <strong>Cinematic and Dramatic:</strong> "Use dramatic lighting, slow-motion shots, and a haunting soundtrack."</li>
+            <li> <strong>Minimalist and Clean:</strong>  "Use a simple color palette, smooth transitions, and calming music."</li>
+            
+          </ul>
+        </p>
+
+              <h2 class="fw-bold text-left text-black mb-4">8.  Iterate and Refine</h2>
+              <!-- Follow-up Text -->
+            
+              <p class="text-left text-black"> Video creation is an iterative process. Experiment with different prompts, adjust details, and 
+                refine your approach based on the results.</p>
+
+                <h4>Examples of Iteration:</h4>
+            <p>
+              <ol>
+                <li>First attempt: "A promotional video for our fitness app."</li>
+                <li> Refinement: "A 60-second promotional video showcasing the app’s workout tracking, meal planning,
+                  and community features, with upbeat music and a friendly voiceover."</li>
+                <li> Final version: "A 60-second promotional video in 1080p resolution, highlighting the app’s features
+                  with vibrant colors, fast transitions, and a call-to-action at the end."</li>
+              </ol>
+            
+            </p>
+
+
+            <h2 class="fw-bold text-left text-black mb-4">9.  Bonus Tips for Video Prompt Engineering</h2>
+            <!-- Follow-up Text -->
+          
+            <p>
+              <ul>
+                <li> <strong>Use Visual References:</strong>  Provide reference images or videos to guide the AI toward a specific style or composition.</li>
+                <li> <strong>Incorporate Storytelling:</strong>  Structure your video as a narrative with a clear beginning, middle, and end.</li>
+                <li> <strong>Leverage AI Avatars:</strong>  Use tools like Synthesia to create videos with AI-generated presenters.</li>
+                <li> <strong>Add Text and Graphics:</strong>   Request text overlays, captions, or animations to enhance the video’s impact.</li>
+              </ul>
+            </p>
+            <h4>By following this guide, you can create effective prompts that produce high-quality video content tailored to your vision. Whether you’re a marketer,
+             educator, or content creator, this framework will help you unlock the full potential of AI video generation tools. 🎥</h4>
+
+  </div>
+
+  <!-- Background Image with Faint Effect -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('img/hero/OIP\ \(6\).jpeg'); background-size: cover; background-position: center; background-attachment: fixed; opacity: 0.3; z-index: -1;"></div>
+</section>
+  
+
+<!-- NEXT ONE  -->
+<section class="py-5" style="position: relative; overflow: hidden;">
+  <div class="container">
+      <!-- Bold Heading -->
+      <h2 class="fw-bold text-left text-black mb-4">Prompt Engineering Guide for Coding Using LLMs</h2>
+      <!-- Follow-up Text -->
+      <p class="text-left text-black">Large Language Models (LLMs) like ChatGPT are powerful tools for code generation, debugging, and learning. This guide provides a 
+        structured approach to crafting effective prompts for coding tasks, inspired by the <strong>CREATE</strong> framework and tailored for developers, educators, and learners. 
+        Whether you're generating code, debugging, or learning a new programming language, this guide will help you get the most out of LLMs.</p>
+
+          <h2 class="fw-bold text-left text-black mb-4">1. Character: Define Your Role and Context</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Clearly state your role and the context of the coding task. This helps the LLM tailor its response to your needs.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> I am a junior developer learning Python.</li>
+            <li> I am a data scientist working on a machine learning project.</li>
+            <li> I am a web developer building a React application.</li>
+          </ul>
+        </p>
+
+       
+
+          <h2 class="fw-bold text-left text-black mb-4">2. Request: State What You Want</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify the coding task or output you want. Be clear about the programming language, functionality, 
+            or problem you need to solve.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li>Write a Python function to calculate the factorial of a number.</li>
+            <li> Generate a SQL query to find all customers who made a purchase in the last 30 days.</li>
+            <li> Create a React component that displays a list of items in a dropdown menu.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">3. Example: Provide a Sample Output</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Give an example of the desired output to guide the LLM. This could include the structure, format, or functionality of the code.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> The Python function should take an integer as input and return its factorial. For example, factorial(5) should return 120.</li>
+            <li> The SQL query should return a list of customer names and their purchase dates. For example: John Doe, 2023-10-01.</li>
+            <li> The React component should render a dropdown menu with items like ["Option 1", "Option 2", "Option 3"].</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">4. Adjustment: Outline Key Features and Constraints</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify any key features, constraints, or requirements for the code. This ensures the output aligns with your expectations.</p>
+          
+        
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> he Python function should handle edge cases like negative numbers and zero.</li>
+            <li> The SQL query should join the customers and orders tables and filter by the purchase_date column.</li>
+            <li> The React component should be reusable and accept an array of items as a prop.</li>
+          </ul>
+        </p>
+
+
+          <h2 class="fw-bold text-left text-black mb-4">5. Token Penalty: Set Code Length or Complexity</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Define the desired length or complexity of the code. This helps the LLM structure the output appropriately.</p>
+          
+          <h4>Examples</h4>
+        <p>
+          <ol>
+            <li> The Python function should be concise, no more than 10 lines of code.</li>
+            <li> The SQL query should be optimized for performance and avoid nested subqueries.</li>
+            <li> The React component should be a functional component using hooks, not a class component.</li>
+          </ol>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">6.  Extras: Add Specific Details or Follow-Up Interactions</h2>
+        <!-- Follow-up Text -->
+      
+        <p class="text-left text-black"> Include any additional details, such as libraries, frameworks, or testing requirements. 
+          You can also request follow-up interactions to refine the output.</p>
+
+          <h4>Examples</h4>
+      <p>
+        <ul>
+          <li> Use the math library in Python for the factorial function. Ask me if I need help testing the function.</li>
+          <li> Use MySQL syntax for the SQL query. Ask me if I need help creating the database schema.</li>
+          <li> Use Tailwind CSS for styling the React component. Ask me if I need help integrating the component into an existing project.</li>
+        </ul>
+      
+      </p>
+          
+          <h2 class="fw-bold text-left text-black mb-4">7.  Experiment with Prompt Types and Formats</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Different prompt formats can yield varied results. Experiment to find what works best for your needs.</p>
+          
+          <h4>Basic Code Generation</h4>
+        <p>
+          <ul>
+            <li> Write a Python function to reverse a string.</li>
+            <li> Generate a SQL query to find the top 10 highest-paid employees.</li>
+            <li> Create a JavaScript function to validate an email address.</li>
+          </ul>
+        </p>
+
+        <h4>Turn Comments Into Code</h4>
+        <p>
+          <ul>
+            <li> *"""
+              <ol>
+                <li>Create a list of movies.</li>
+                <li>Create a list of ratings for these movies.</li>
+                <li>Combine them into a JSON object. </li>
+
+              </ol>
+            </li>
+            <li> *"""
+              <ol>
+                <li>Define a function to calculate the area of a circle.</li>
+                <li>Use the formula: area = π * r^2. """*</li>
+              
+              </ol>
+            </li>
+            
+          </ul>
+        </p>
+
+        <h4>Complete Functions or Next Line</h4>
+        <p>
+          <ul>
+            <li> # function to multiply two numbers and add 75 to it<br>
+              def multiply(</li>
+            <li> # function to filter even numbers from a list<br>
+              def filter_evens(</li>
+            
+          </ul>
+        </p>
+
+          <h4>Database Schema and Query Generation</h4>
+          <p>
+            <ul>
+              <li> Generate a MySQL schema for a library management system with tables for books, authors, and borrowers.</li>
+              <li> Write a SQL query to find all books published after 2020.</li>
+              
+            </ul>
+          </p>
+
+          <h4>Explain Code</h4>
+          <p>
+            <ul>
+              <li> Explain the following Python code:<br>
+                python def factorial(n): if n == 0: return 1 else: return n * factorial(n-1)</li>
+              <li> Explain the following SQL query:<br>
+                sql SELECT * FROM employees WHERE salary > 50000;.</li>
+              
+            </ul>
+          </p>
+
+              <h2 class="fw-bold text-left text-black mb-4">8. Iterate and Refine</h2>
+              <!-- Follow-up Text -->
+            
+              <p class="text-left text-black"> Coding with LLMs is an iterative process. Experiment with different prompts,
+                 adjust details, and refine your approach based on the results.</p>
+
+                <h4>Examples of Iteration:</h4>
+            <p>
+              <ol>
+                <li>First attempt: Write a Python function to calculate the factorial of a number.</li>
+                <li> Refinement: Write a Python function to calculate the factorial of a number. Handle edge cases like negative numbers and zero.</li>
+                <li>Final version: Write a Python function to calculate the factorial of a number. Use recursion and handle edge cases like negative
+                   numbers and zero. The function should return None for invalid inputs.</li>
+              </ol>
+            
+            </p>
+
+
+            <h2 class="fw-bold text-left text-black mb-4">9. Bonus Tips for Coding with LLMs</h2>
+            <!-- Follow-up Text -->
+          
+            <p>
+              <ul>
+                <li> <strong>Test Generated Code:</strong>   Always test the code generated by LLMs to ensure it works as expected.</li>
+                <li> <strong>Use Comments:</strong>   Include comments in your prompts to guide the LLM toward specific functionality or logic.</li>
+                <li> <strong>Leverage Libraries:</strong>   Specify libraries or frameworks you want to use, such as pandas for data analysis or React for front-end development.</li>
+                <li> <strong>Debugging:</strong>  Use LLMs to debug code by providing the error message and asking for a solution.</li>
+                <li> <strong> Learning:</strong>  Ask the LLM to explain complex code or concepts in simple terms.</li>
+              </ul>
+            </p>
+            <h4>By following this guide, you can create effective prompts that generate high-quality code tailored to your needs. Whether you're 
+            a beginner or an experienced developer, this framework will help you unlock the full potential of LLMs for coding tasks. Happy coding! 💻</h4>
+
+  </div>
+
+  <!-- Background Image with Faint Effect -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color:white; background-size: cover; background-position: center; background-attachment: fixed; opacity: 0.3; z-index: -1;"></div>
+</section>
+
+
+
+    
+<!-- NEXT ONE  -->
+<section class="py-5" style="position: relative; overflow: hidden;">
+  <div class="container">
+      <!-- Bold Heading -->
+      <h2 class="fw-bold text-left text-black mb-4">Prompt Engineering Guide for VR and 3D Images and Videos</h2>
+      <!-- Follow-up Text -->
+      <p class="text-left text-black">Creating immersive and realistic <strong>VR (Virtual Reality)</strong>  and <strong>3D images/videos </strong>
+        requires a combination of creativity, technical expertise, and effective prompt engineering. This guide
+         provides a structured approach to crafting prompts for generating VR and 3D content using AI tools and frameworks.
+          Whether you're designing for commerce, education, or entertainment, this guide will help you achieve excellence 
+          in your VR and 3D projects.</p>
+
+          <h2 class="fw-bold text-left text-black mb-4">1. Character: Define Your Role and Context</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Clearly state your role and the context of the VR/3D project. This helps the AI understand the perspective and purpose of the content.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li>  I am a VR developer creating a virtual shopping experience for an e-commerce platform.</li>
+            <li> I am a 3D artist designing an immersive classroom for an educational VR app.</li>
+            <li> I am a game developer building a virtual concert venue for a music VR experience.</li>
+          </ul>
+        </p>
+
+       
+
+          <h2 class="fw-bold text-left text-black mb-4">2. Request: State What You Want</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify the type of VR or 3D content you want to create. Be clear about the theme, functionality, and key elements.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Create a 3D virtual store where users can pick up, rotate, and inspect products.</li>
+            <li> Design an immersive VR classroom with interactive whiteboards and VR textbooks.</li>
+            <li> Build a virtual concert venue where users can interact with instruments and experience spatial audio.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">3. Example: Provide a Sample Output</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Give an example of the desired output to guide the AI. This could include the structure, style, or functionality of the VR/3D content.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> The virtual store should include shelves with 3D products, interactive kiosks, and augmented data displays.</li>
+            <li> he VR classroom should have a realistic layout with a whiteboard, desks, and interactive learning tools.</li>
+            <li>The concert venue should feature a stage, audience seating, and 3D spatial audio for an immersive experience.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">4. Adjustment: Outline Key Features and Constraints</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify any key features, constraints, or requirements for the VR/3D content. This ensures the output aligns with your vision.</p>
+          
+        
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> The virtual store should include realistic physics for product interactions, such as picking up and rotating items.</li>
+            <li> The VR classroom should support multi-user interactions, allowing students and teachers to collaborate in real-time.</li>
+            <li> The concert venue should include ray tracing for realistic lighting and reflections, as well as 3D spatial audio.</li>
+          </ul>
+        </p>
+
+
+          <h2 class="fw-bold text-left text-black mb-4">5. Token Penalty: Set Output Length or Complexity</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Define the desired length or complexity of the VR/3D content. This helps the AI structure the output appropriately.</p>
+          
+          <h4>Examples</h4>
+        <p>
+          <ol>
+            <li> The virtual store should be optimized for high-performance VR headsets like Oculus Rift and HTC Vive.</li>
+            <li> The VR classroom should include at least 5 interactive elements, such as a whiteboard, textbooks, and a quiz system.</li>
+            <li> The concert venue should be designed for mobile VR systems like Google Cardboard, with simplified graphics for better performance.</li>
+          </ol>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">6. Extras: Add Specific Details or Follow-Up Interactions</h2>
+        <!-- Follow-up Text -->
+      
+        <p class="text-left text-black"> Include any additional details, such as advanced technologies, interaction mechanisms, or testing requirements.
+           You can also request follow-up interactions to refine the output.</p>
+
+          <h4>Examples</h4>
+      <p>
+        <ul>
+          <li> Use AI-driven characters in the virtual store to assist users with product recommendations. Ask me if I need help integrating the AI.</li>
+          <li> Incorporate physics engines in the VR classroom to simulate realistic interactions with objects. Ask me if I need help testing the physics.</li>
+          <li> Add haptic feedback to the concert venue for a more immersive experience. Ask me if I need help selecting the right haptic devices.</li>
+        </ul>
+      
+      </p>
+          
+          <h2 class="fw-bold text-left text-black mb-4">7. Experiment with VR Themes and Advanced Technologies</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Different VR themes and technologies can yield varied results. Experiment to find what works best for your needs.</p>
+          
+          <h4>VR Themes</h4>
+        <p>
+          <ul>
+            <li> <strong>Commerce:</strong>  Design a virtual store with 3D products, interactive kiosks, and AI-driven sales assistants.</li>
+            <li> <strong>Education:</strong>  Create a VR classroom with interactive whiteboards, VR textbooks, and collaborative tools.</li>
+            <li> <strong>Music:</strong>  Build a virtual concert venue with 3D spatial audio, interactive instruments, and ray-traced lighting.</li>
+            <li> <strong>Project Management:</strong>   Design a virtual collaborative space with 3D Gantt charts, workflows, and interactive holograms.</li>
+            <li> <strong>Cybersecurity:</strong>   Create a VR simulation of a network with 3D visualizations of firewalls, security layers, and threat models.</li>
+            <li> <strong>Sports:</strong>   Design a VR sports field with realistic physics for player movements, such as kicking, running, and throwing.</li>
+          </ul>
+        </p>
+
+        <h4>Advanced Technologies</h4>
+        <p>
+          <ul>
+            <li> <strong>AI:</strong>  Implement AI-driven characters or tools for realistic interactions, such as AI sales assistants or 
+              project management analyzers.</li>
+            <li> <strong>Physics Engines:</strong> Use physics engines to simulate realistic object interactions, such 
+              as gravity, collisions, and fluid dynamics.</li>
+            <li> <strong> Ray Tracing:</strong> Leverage ray tracing for advanced lighting effects, such as realistic reflections and shadows.</li>
+            <li> <strong> 3D Spatial Audio:</strong>  Incorporate 3D spatial audio to enhance immersion, with directional sound effects and ambient noise.</li>
+          </ul>
+        </p>
+
+
+              <h2 class="fw-bold text-left text-black mb-4">8. Focus on User Experience (UX) and Interaction Design</h2>
+              <!-- Follow-up Text -->
+            
+              <p class="text-left text-black"> Ensure the VR/3D content provides an intuitive and immersive user experience.</p>
+
+                <h4>Examples</h4>
+            <p>
+              <ul>
+                <li>Allow users to interact with the environment using touch, gestures, voice commands, and gaze control.</li>
+                <li> Incorporate smooth navigation mechanisms, such as teleportation or smooth locomotion, to minimize VR sickness.</li>
+                <li> Use immersive sound design to match visual fidelity, with directional audio and ambient noise.</li>
+              </ul>
+            
+            </p>
+
+
+            <h2 class="fw-bold text-left text-black mb-4">9. Test Across Multiple VR Platforms</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black"> Ensure your VR/3D content performs optimally across different platforms.</p>
+
+            <h4>Examples</h4>
+            
+            <p>
+              <ul>
+                <li> Test the virtual store on Oculus Rift, HTC Vive, and mobile VR systems like Google Cardboard.</li>
+                <li> Optimize the VR classroom for high-performance headsets and ensure it runs smoothly on lower-end devices.</li>
+                <li> Test the concert venue on PlayStation VR and ensure it supports 3D spatial audio on all platforms.</li>
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">9. Test Across Multiple VR Platforms</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black"> Ensure your VR/3D content performs optimally across different platforms.</p>
+
+            <h4>Examples</h4>
+            
+            <p>
+              <ul>
+                <li> Test the virtual store on Oculus Rift, HTC Vive, and mobile VR systems like Google Cardboard.</li>
+                <li> Optimize the VR classroom for high-performance headsets and ensure it runs smoothly on lower-end devices.</li>
+                <li> Test the concert venue on PlayStation VR and ensure it supports 3D spatial audio on all platforms.</li>
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">10. Collaborate with Experts</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black"> Work with professionals to enhance the quality and accuracy of your VR/3D content.</p>
+
+            <h4>Examples</h4>
+            
+            <p>
+              <ul>
+                <li> Collaborate with 3D artists to create highly detailed models of environments and objects.</li>
+                <li> Work with VR developers to optimize interactivity and performance.</li>
+                <li> Consult subject matter experts (e.g., educators, project managers, cybersecurity professionals) to ensure realism and accuracy.</li>
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">11. Stay Updated on Trends</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black"> Keep up with the latest advancements in VR technology to integrate cutting-edge features into your projects.</p>
+
+            <h4>Examples</h4>
+            
+            <p>
+              <ul>
+                <li> Follow developments in AI, real-time rendering, and user interaction to push the boundaries of what's possible.</li>
+                <li> Experiment with new haptic feedback devices and motion capture tools to enhance immersion.</li>
+                <li> Stay informed about the latest VR headsets, such as Meta Quest 3 or Apple Vision Pro, and optimize your content for these platforms.</li>
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">12.   Iterate and Refine</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black"> VR and 3D content creation is an iterative process. Experiment with different prompts, adjust details, 
+              and refine your approach based on user feedback and testing results.</p>
+
+            <h4>Examples</h4>
+            
+            <p>
+              <ol>
+                <li> First attempt: Create a virtual store with 3D products.</li>
+                <li> Refinement: Add interactive kiosks and AI-driven sales assistants to the virtual store.</li>
+                <li> Final version: Optimize the virtual store for high-performance VR headsets, with ray-traced lighting and 3D spatial audio.</li>
+              </ol>
+            </p>
+            <h4>By following this guide, you can create effective prompts that produce high-quality VR and 3D content tailored to your vision. Whether 
+            you're a developer, designer, or educator, this framework will help you unlock the full potential of VR and 3D technologies. 🚀</h4>
+          
+  </div>
+
+  <!-- Background Image with Faint Effect -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('img/hero/hero-1.jpg'); background-size: cover; background-position: center; background-attachment: fixed; opacity: 0.3; z-index: -1;"></div>
+</section>
+
+
+
+<!-- NEXT ONE  -->
+<section class="py-5" style="position: relative; overflow: hidden;">
+  <div class="container">
+      <!-- Bold Heading -->
+      <h2 class="fw-bold text-left text-black mb-4">Prompt Engineering Guide for Business Development</h2>
+      <!-- Follow-up Text -->
+      <p class="text-left text-black">This guide provides a structured approach to crafting effective prompts for <strong>business development</strong> using 
+        a generic business model. Whether you're creating a new product, developing a marketing strategy, or building digital tools, this 
+        framework will help you generate actionable and innovative ideas. The guide is based on a <strong>12-step process</strong> tailored for business 
+        growth and development.</p>
+
+          <h2 class="fw-bold text-left text-black mb-4">1.   Define Your Business Narrative</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Start by outlining the general narrative of your business. This sets the context for all subsequent prompts.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Our business is a tech startup focused on developing AI-powered tools for small businesses.</li>
+            <li>  We are a sustainable fashion brand aiming to reduce waste through innovative recycling techniques.</li>
+            <li> Our company provides online education platforms for professionals seeking career advancement.</li>
+          </ul>
+        </p>
+
+       
+
+          <h2 class="fw-bold text-left text-black mb-4">2. Create a Business Product or Technology Solution</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Specify the product or technology solution you want to develop. Clearly define its purpose and functionality.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li>Create a business product: an AI-powered chatbot for customer service.</li>
+            <li> Develop a technology solution: a mobile app that helps users track their carbon footprint.</li>
+            <li> Design a product: a subscription-based meal kit service for busy professionals.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">3. Identify Problems and Solutions</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Outline potential problems your target audience faces and explain how your product or technology will solve them.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Problem: Small businesses struggle with managing customer inquiries. Solution: Our AI chatbot automates responses, 
+              reducing response time and improving customer satisfaction.</li>
+            <li> Problem: Consumers lack awareness of their environmental impact. Solution: Our carbon footprint 
+              tracker app provides real-time data and actionable insights.</li>
+            <li> Problem: Busy professionals find it hard to cook healthy meals. Solution: Our meal kit service
+               delivers pre-portioned ingredients with easy-to-follow recipes.</li>
+          </ul>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">4. Present a Clear Marketing Strategy</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Develop a marketing strategy to promote your product or technology. Include channels, messaging, and target audience.</p>
+          
+        
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> Marketing Strategy: Use social media ads on Facebook and Instagram to target small business owners.
+               Highlight the chatbot’s ability to save time and improve customer service.</li>
+            <li> Marketing Strategy: Partner with eco-friendly influencers on YouTube and TikTok to promote the carbon 
+              footprint tracker app. Emphasize its ease of use and environmental benefits.</li>
+            <li> Marketing Strategy: Launch a referral program for the meal kit service, offering discounts to
+               customers who refer friends. Use email marketing to engage busy professionals.</li>
+          </ul>
+        </p>
+
+
+          <h2 class="fw-bold text-left text-black mb-4">5. Develop Social Media Concepts</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Create social media page concepts that align with your business goals. Ensure they 
+            are user-friendly and linked to major platforms.</p>
+          
+          <h4>Examples</h4>
+        <p>
+          <ol>
+            <li> Social Media Concept: A Facebook page for the AI chatbot, featuring customer testimonials, demo videos, and tips for improving customer service.</li>
+            <li> Social Media Concept: An Instagram page for the carbon footprint tracker, showcasing user success stories, environmental facts, and app features.</li>
+            <li> Social Media Concept: A YouTube channel for the meal kit service, featuring cooking tutorials, recipe ideas, and unboxing videos.</li>
+          </ol>
+        </p>
+
+        <h2 class="fw-bold text-left text-black mb-4">  6.  Build a User-Friendly Website</h2>
+        <!-- Follow-up Text -->
+      
+        <p class="text-left text-black"> Design a website that effectively showcases your product or service. Ensure it is easy to navigate and integrates key features.</p>
+
+          <h4>Examples</h4>
+      <p>
+        <ul>
+          <li> Website Features: A homepage with chatbot demo videos, pricing plans, and a blog with customer service tips.</li>
+          <li> Website Features: A dashboard for the carbon footprint tracker, user testimonials, and a blog on sustainability.</li>
+          <li> Website Features: A meal kit subscription page, recipe library, and customer reviews.</li>
+        </ul>
+      
+      </p>
+          
+          <h2 class="fw-bold text-left text-black mb-4">7.  Incorporate Generative AI Assistants</h2>
+          <!-- Follow-up Text -->
+          <p class="text-left text-black">Integrate AI assistants into your digital tools to enhance user experience. Include features
+             like language translation and personalized recommendations.</p>
+          
+          <h4>Examples:</h4>
+        <p>
+          <ul>
+            <li> AI Assistant: A chatbot that provides customer support in multiple languages.</li>
+            <li> AI Assistant: A virtual assistant in the carbon footprint tracker app that offers personalized tips for reducing emissions.</li>
+            <li> AI Assistant: A meal planning assistant that suggests recipes based on user preferences and dietary restrictions.</li>
+          </ul>
+        </p>
+
+
+              <h2 class="fw-bold text-left text-black mb-4">8. Develop Immersive Experiences</h2>
+              <!-- Follow-up Text -->
+            
+              <p class="text-left text-black"> Create immersive experiences that allow users to interact with your product or service virtually.</p>
+
+                <h4>Examples </h4>
+            <p>
+              <ul>
+                <li>Immersive Experience: A virtual demo of the AI chatbot, allowing users to test its features in a simulated environment.</li>
+                <li> Immersive Experience: An augmented reality feature in the carbon footprint tracker app that visualizes the environmental impact of daily activities.</li>
+                <li>Immersive Experience: A virtual cooking class hosted on the meal kit service’s website, where users can follow along with a chef in real-time.</li>
+              </ul>
+            
+            </p>
+
+
+            <h2 class="fw-bold text-left text-black mb-4">9.  Create Digital Twins</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black">  Develop digital twins of your products or services to enhance user engagement and provide a realistic preview.</p>
+
+            <h4>Examples </h4>
+           
+            <p>
+              <ul>
+                <li> Digital Twin: A 3D model of the AI chatbot that users can interact with on the website.</li>
+                <li> Digital Twin: A virtual representation of the carbon footprint tracker app, showcasing its features in a simulated environment.</li>
+                <li> Digital Twin: A virtual kitchen where users can explore meal kit recipes and cooking techniques.</li>
+              
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">10. Develop Software Products</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black">  Design software products that complement your core offering and add value to your customers.</p>
+
+            <h4>Examples </h4>
+           
+            <p>
+              <ul>
+                <li> Software Product: A CRM tool integrated with the AI chatbot for small businesses.</li>
+                <li> Software Product: A sustainability dashboard for businesses using the carbon footprint tracker.</li>
+                <li> Software Product: A meal planning app that syncs with the meal kit service subscription.</li>
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">11. Present Masterclass Sessions</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black">  Offer educational sessions to train your audience on your product, technology, or niche.</p>
+
+            <h4>Examples </h4>
+           
+            <p>
+              <ul>
+                <li> Masterclass: A webinar series on leveraging AI chatbots for customer service excellence.</li>
+                <li>  Masterclass: A workshop on reducing carbon footprints using the tracker app.</li>
+                <li> Masterclass: A cooking class series featuring recipes from the meal kit service.</li>
+              </ul>
+            </p>
+
+            <h2 class="fw-bold text-left text-black mb-4">12.  Train Your Audience in AI and Business Intelligence</h2>
+            <!-- Follow-up Text -->
+            <p class="text-left text-black">  Provide training programs to help your audience understand and utilize AI and business intelligence tools.</p>
+
+            <h4>Examples </h4>
+           
+            <p>
+              <ul>
+                <li> Training Program: A course on using AI tools for small business growth.</li>
+                <li>  Training Program: A workshop on interpreting data from the carbon footprint tracker to make sustainable decisions.</li>
+                <li> Training Program: A series of tutorials on meal planning and preparation using the meal kit service.</li>
+              </ul>
+            </p>
+            <h4>By following this <strong>12-step prompt engineering guide</strong>, you can effectively develop and promote your business products and services. This framework
+             ensures clarity, innovation, and alignment with your business goals, helping you achieve success in a competitive market. 🚀</h4>
+
+  </div>
+
+  <!-- Background Image with Faint Effect -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color:white; background-size: cover; background-position: center; background-attachment: fixed; opacity: 0.3; z-index: -1;"></div>
+</section>
+
+
+<!-- Video Tutorials Section -->
+<section id="demo" style="background-color: rgb(5, 63, 26); padding: 60px 0;">
+  <div class="container text-center text-white">
+    <h2 class="mb-5">Video Tutorials: How to Use AI Tools</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <!-- Video Embed -->
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://youtu.be/FTm_FP85sWY?si=fbM1JUVFaBglgJWG" 
+            title="AI Tools Tutorial"
+            allowfullscreen 
+            style="border-radius: 10px;">
+          </iframe>
+        </div>
+        <!-- Tip: Replace 'YOUR_VIDEO_ID' with actual YouTube video ID -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image Grid and Register Section -->
+<section id="webinar" style="background-color: white; padding: 60px 0;">
+  <div class="container text-center">
+    <h2 class="mb-5"><strong>Explore Our AI Tools Categories</strong></h2>
+
+    <!-- Three Image Grid -->
+    <div class="row mb-5">
+      <div class="col-md-4 mb-4">
+        <img src="img/hero/BB (5).jpg" class="img-fluid rounded mb-2" alt="Tool 1">
+        <h4><strong>AI Trends</strong></h4>
+        <p>Stay ahead of the curve by attending our webinars, featuring industry experts and the latest AI innovations.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="img/hero/BB (1).jpg" class="img-fluid rounded mb-2" alt="Tool 2">
+        <h4><strong>AI Applications</strong></h4>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="img/hero/BB (6).jpg" class="img-fluid rounded mb-2" alt="Tool 3">
+        <h4><strong>AI Ethics</strong></h4>
+      </div>
+    </div>
+
+    <!-- Centered Image with Register Button -->
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <img src="img/hero/BB (2).jpg" class="img-fluid rounded mb-4" alt="Register Feature">
+        <a href="https://beta.ilabs.world/" class="btn text-white px-4 py-2 mb-2" style="background-color: rgb(5, 63, 26);">Register Here</a>
+        <p class="text-muted small">Learn Visual Content Creation </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section Begin -->
+<footer id="contact" class="text-white pt-5 pb-4" style="background-color: #000;">
+  <div class="container">
+    <div class="row">
+
+      <!-- About Us -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">About Us</h5>
+        <p class="small">
+         <h6>AI ILabs is your ultimate hub for productivity-boosting AI tools. Discover the right tools for your needs, find tailored prompts, and explore demos that make leveraging AI simple and effective.</h6> 
+        </p>
+      </div>
+
+      <!-- Contact / Message Form -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Contact Us</h5>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-2">
+            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+          </div>
+          <button href="innovationlabs.contact@gmail.com" type="submit" class="btn btn-primary w-100" style="background-color: rgb(5, 63, 26); border: none;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Follow Us</h5>
+        <div class="d-flex gap-3" style="padding: 10px;">
+          <a href="https://www.facebook.com/share/g/15VmRkanax/?mibextid=wwXIfr" style="padding: 5px;" class="text-white"><i class="fa fa-facebook"></i></a>
+        <a href="https://x.com/ilabsglobal" style="padding: 5px;" class="text-white"><i class="fa fa-twitter"></i></a>
+        <a href="https://beta.ilabs.world/" style="padding: 5px;" class="text-white"><i class="fa fa-dribbble"></i></a>
+        <a href="https://www.instagram.com/p/DDY7fGyNA2y/?utm_source=ig_web_copy_link&igsh=MzRIODBiNWFIZA==" style="padding: 5px;" class="text-white"><i class="fa fa-instagram"></i></a>
+        <a href="https://youtu.be/FTm_FP85sWY?si=fbM1JUVFaBglgJWG" style="padding: 5px;" class="text-white"><i class="fa fa-youtube-play"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+
+    <div class="text-center small">
+      &copy; 2025 AI iLabs. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -587,6 +1802,12 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- animation  -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
 </body>
 
 </html>
